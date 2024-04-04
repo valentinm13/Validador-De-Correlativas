@@ -14,9 +14,9 @@ public class ValidadorTest {
         Materia ayed = new Materia("AyED");
         Alumno valentin = new Alumno("Valentin", "2087765");
 
-        Inscripcion inscripcionDeValentinAM1 = new Inscripcion(valentin,am1,ayed);
+        Inscripcion inscripcionDeValentinAAM1yAyED = new Inscripcion(valentin,am1,ayed);
 
-        Assertions.assertTrue(inscripcionDeValentinAM1.aprobada());
+        Assertions.assertTrue(inscripcionDeValentinAAM1yAyED.aprobada());
 
     }
 
@@ -30,9 +30,9 @@ public class ValidadorTest {
         Alumno gonzalo = new Alumno("Gonzalo", "1987265",aga,am1,ayed);
 
 
-        Inscripcion inscripcionDegonzaloAPdPyAM2 = new Inscripcion(gonzalo,pdp,am2);
+        Inscripcion inscripcionDeGonzaloAPdPyAM2 = new Inscripcion(gonzalo,pdp,am2);
 
-        Assertions.assertTrue(inscripcionDegonzaloAPdPyAM2.aprobada());
+        Assertions.assertTrue(inscripcionDeGonzaloAPdPyAM2.aprobada());
 
     }
 
@@ -44,9 +44,9 @@ public class ValidadorTest {
         Materia dds = new Materia("DDS",ayed,pdp,ads);
         Alumno agustin = new Alumno("Agustin", "2045665",ayed);
 
-        Inscripcion inscripcionDeAgustinDDS = new Inscripcion(agustin,pdp,dds);
+        Inscripcion inscripcionDeAgustinADDS = new Inscripcion(agustin,pdp,dds);
 
-        Assertions.assertFalse(inscripcionDeAgustinDDS.aprobada());
+        Assertions.assertFalse(inscripcionDeAgustinADDS.aprobada());
 
 
     }
